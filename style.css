@@ -1,0 +1,36 @@
+body {
+    background-color: #0F111A;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.solar-system-image-container {
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+.solar-system-image-container img {
+    animation: spin 5s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
